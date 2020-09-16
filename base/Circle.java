@@ -18,4 +18,12 @@ public class Circle
         this.y = y;
         this.radius = radius;
     }
+    
+    public boolean equals(Object obj){
+        Circle c = (Circle)obj;
+        if (x == c.x && y == c.y)
+            return true;
+        else
+            return false;
+    }
 }
