@@ -1,13 +1,13 @@
 package main;
-
+import base.Circle;
 
 /**
- * 여기에 MyApp 클래스 설명을 작성하십시오.
+ * main 메소드를 실행시키는 클래스
  * 
- * @author (작성자 이름) 
- * @version (버전번호나 날짜)
+ * @author (2019315020 오성빈, 2018210032 김태영) 
+ * @version (2020.09.16)
  */
-public class MyApp
+public class MyApp implements Circle
 {
     public static void main(String[] args){
         Integer[] array;
@@ -18,6 +18,10 @@ public class MyApp
         
         System.out.println("원1 : " + c1 + " ==> 면적 : " + c1.getArea());
         System.out.println("원1 : " + c2 + " ==> 면적 : " + c2.getArea());
-        if() 
+        if(c1.equals(c2)) 
+            System.out.println("같은원");
+        else
+            System.out.println("서로 다른 원");
+            
     }
 }
